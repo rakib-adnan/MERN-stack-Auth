@@ -9,6 +9,7 @@ import loginRoute from "./routes/user.js";
 import registerRoute from "./routes/user.js";
 import { userLogin, userRegister } from "./controllers/authController.js";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 
 
 
@@ -21,6 +22,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended : false}))
 //! cookie
 app.use(cookieParser())
+//! cors
+app.use(cors());
 
 
 

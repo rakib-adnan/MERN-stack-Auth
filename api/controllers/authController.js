@@ -58,6 +58,7 @@ import jwt from "jsonwebtoken";
             const user = await User.create({...req.body, password : has_pass});
             res.status(200).json(user);
         } catch (error) {
+            console.log(error);
             next(error);
         }
     }   

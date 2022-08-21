@@ -19,15 +19,10 @@ const userSchema = mongoose.Schema({
     },
     cell : {
         type : String,
-        required : true,
         trim : true,
-        unique : true
-
     },
     age : {
-        type : Number,
-        required: true,
-        
+        type : Number,     
     },
     password : {
         type : String,
@@ -38,6 +33,7 @@ const userSchema = mongoose.Schema({
         type : String,
         required : true,
         trim : true,
+        unique : true
     },
     gender : {
         type : String,
